@@ -1,4 +1,4 @@
-oid bai8() {
+void bai8() {
     int x;
     printf("Nhap x: ");
     scanf("%d",&x);
