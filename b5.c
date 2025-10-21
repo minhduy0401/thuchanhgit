@@ -1,18 +1,16 @@
-#include <stdio.h>
+void bai5() {
+    int soDien, tien;
+    tien = 0;
+    printf("Nhap so dien tieu thu: ");
+    scanf("%d", &soDien);
 
-int main() {
-    int sodien;
-    int sotien = 0;
-    
-    printf("nhap so dien da dung\n");
-    scanf("%d", &sodien);
-
-    if(sodien <= 100)
-        sotien = sodien * 500;
-    else if(sodien <= 350)
-        sotien = 100 * 500 + (sodien - 100) * 550;
+    if (soDien <= 100)
+        tien = soDien * 500;
+    else if (soDien <= 350)
+        tien = 100 * 500 + (soDien - 100) * 550;
     else
-        sotien = 100 * 500 + 250 * 550 + (sodien - 350) * 650;
-    printf("so tien dien phai tra la: %d\n", sotien);
-    return 0;
+        tien = 100 * 500 + 250 * 550 + (soDien - 350) * 650;
+
+    printf("Tien dien la: %d dong\n", tien);
 }
+
