@@ -22,4 +22,5 @@ int main ()
     printf("Nhap n (de in day Fibonacci nho hon n): ");
     scanf("%d", &n);
     inFibonacci(n);
+    return 0;
 }
